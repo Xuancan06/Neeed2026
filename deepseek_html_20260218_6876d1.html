@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lì xì Tết 2026 – Need thích màu xanh dương</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde2a2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            color: #c4450c;
+            text-shadow: 4px 4px 0 #ffd966;
+        }
+
+        .header .sub {
+            background: #ffdead;
+            display: inline-block;
+            padding: 12px 40px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #72380f;
+            border: 3px solid #f39c4b;
+            margin-top: 10px;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .left-col {
+            flex: 2;
+            min-width: 350px;
+        }
+
+        .form-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 50px;
+            padding: 35px;
+            border: 3px solid #fbb36b;
+            box-shadow: 0 20px 30px -5px rgba(180, 80, 20, 0.3);
+        }
+
+        .right-col {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .history-card {
+            background: #fff6e5;
+            border-radius: 50px;
+            padding: 25px;
+            border: 3px solid #fca759;
+            position: sticky;
+            top: 20px;
+        }
+
+        .history-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #9f4418;
+            border-bottom: 4px dotted #f7b668;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .history-list {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .history-item {
+            background: #ffefcf;
+            border-radius: 30px;
+            padding: 18px;
+            margin-bottom: 18px;
+            border: 2px solid #e0964a;
+            transition: 0.2s;
+        }
+
+        .history-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 0 #b46226;
+        }
+
+        .history-item .time {
+            color: #a64d13;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .history-item .name {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #632f0a;
+        }
+
+        .history-item .amount {
+            background: #fbc07c;
+            padding: 5px 15px;
+            border-radius: 40px;
+            display: inline-block;
+            font-weight: 800;
+            margin: 8px 0;
+            font-size: 1.1rem;
+        }
+
+        .history-item .answer-preview {
+            color: #8b4f1a;
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        .history-item img {
+            max-width: 100%;
+            max-height: 100px;
+            border-radius: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: 2px solid #e0964a;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            color: #713b12;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .form-group label i {
+            margin-right: 8px;
+            color: #c55c1c;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px 20px;
+            border: 3px solid #f9b158;
+            border-radius: 50px;
+            font-size: 1rem;
+            background: white;
+            transition: all 0.2s;
+        }
+
+        .form-control:focus {
+            border-color: #c44b0e;
+            outline: none;
+            box-shadow: 0 0 0 4px #ffe4b8;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 5px 0;
+        }
+
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .radio-item input[type="radio"] {
+            width: 22px;
+            height: 22px;
+            accent-color: #d9641c;
+            cursor: pointer;
+        }
+
+        .radio-item label {
+            margin: 0;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .question-box {
+            background: #ffdfb5;
+            border-radius: 40px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 2px solid #f59344;
+        }
+
+        .question-box p {
+            font-weight: 700;
+            color: #963e0c;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .color-options {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .color-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .color-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .tiny-note {
+            color: #c04f0c;
+            font-style: italic;
+            margin-top: 8px;
+        }
+
+        .btn-lixi {
+            width: 100%;
+            background: #fcb070;
+            border: none;
+            padding: 22px;
+            font-size: 2.2rem;
+            font-weight: 800;
+            border-radius: 60px;
+            color: #3e240c;
+            border-bottom: 7px solid #9b4f1d;
+            cursor: pointer;
+            transition: 0.1s;
+            margin: 20px 0;
+        }
+
+        .btn-lixi:hover:not(:disabled) {
+            background: #ffbc7a;
+            border-bottom-width: 3px;
+            transform: translateY(4px);
+        }
+
+        .btn-lixi:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .result-area {
+            background: #feeac2;
+            border-radius: 40px;
+            padding: 25px;
+            border: 4px solid #ef8d3d;
+            margin-top: 20px;
+        }
+
+        .amount-badge {
+            font-size: 3rem;
+            font-weight: 900;
+            background: #fcd396;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 90px;
+            color: #a53a03;
+            margin: 10px 0;
+        }
+
+        .wish-box {
+            background: #fff2d3;
+            border-radius: 40px;
+            padding: 20px;
+            font-size: 1.2rem;
+            border: 2px dashed #f09342;
+        }
+
+        .qr-box {
+            background: #fbe2bf;
+            padding: 20px;
+            border-radius: 30px;
+            border: 2px solid #cf6f2c;
+            margin: 15px 0;
+        }
+
+        .qr-code {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 20px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #b45f1b;
+            font-weight: bold;
+        }
+
+        .upload-area {
+            background: #ffeed0;
+            border-radius: 30px;
+            padding: 20px;
+            border: 2px solid #f49b4b;
+        }
+
+        .btn-upload {
+            background: #eba35b;
+            color: #301a06;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            border: none;
+            border-bottom: 5px solid #9e571d;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .preview-img {
+            max-width: 200px;
+            border-radius: 20px;
+            margin: 10px 0;
+            border: 3px solid #f49b4b;
+        }
+
+        .error-message {
+            background: #ffe5d9;
+            color: #b11f1f;
+            padding: 12px;
+            border-radius: 40px;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #71481b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🧧 LÌ XÌ NEED 2026 🧧</h1>
+            <div class="sub">Bóc lì xì - Gửi ảnh - Lưu lịch sử</div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Cột trái -->
+            <div class="left-col">
+                <div class="form-card">
+                    <!-- Họ tên -->
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Họ và tên</label>
+                        <input type="text" class="form-control" v-model="user.name" placeholder="Nhập họ tên...">
+                    </div>
+
+                    <!-- Ngày sinh -->
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> Ngày tháng năm sinh</label>
+                        <input type="date" class="form-control" v-model="user.dob">
+                    </div>
+
+                    <!-- Giới tính -->
+                    <div class="form-group">
+                        <label><i class="fas fa-venus-mars"></i> Giới tính</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="male" name="gender" value="nam" v-model="user.gender">
+                                <label for="male">🧑 Nam</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="female" name="gender" value="nu" v-model="user.gender">
+                                <label for="female">👩 Nữ</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="other" name="gender" value="khac" v-model="user.gender">
+                                <label for="other">🌈 Khác</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Câu hỏi 1 -->
+                    <div class="question-box">
+                        <p><i class="fas fa-question-circle"></i> Câu 1: Bạn và Need có mối quan hệ gì? (tối thiểu 5 chữ)</p>
+                        <input type="text" class="form-control" v-model="answers.q1" placeholder="Ví dụ: bạn thân, người yêu, đồng nghiệp...">
+                        <div class="tiny-note" v-if="answers.q1.length > 0 && answers.q1.length < 5">
+                            ⚠️ Còn thiếu {{5 - answers.q1.length}} chữ
+                        </div>
+                    </div>
+
+                    <!-- Câu hỏi 2 -->
+                    <div class="question-box">
+                        <p><i class="fas fa-palette"></i> Câu 2: Need thích màu gì nhất?</p>
+                        <div class="color-options">
+                            <div class="color-option">
+                                <input type="radio" id="blue" name="favColor" value="xanh dương" v-model="answers.q2">
+                                <label for="blue">🔵 Xanh dương</label>
+                            </div>
+                            <div class="color-option">
+                                <input type="radio" id="orange" name="favColor" value="cam" v-model="answers.q2">
+                                <label for="orange">🟠 Cam</label>
+                            </div>
+                            <div class="color-option">
+                                <input type="radio" id="pink" name="favColor" value="hồng" v-model="answers.q2">
+                                <label for="pink">🌸 Hồng</label>
+                            </div>
+                            <div class="color-option">
+                                <input type="radio" id="red" name="favColor" value="đỏ" v-model="answers.q2">
+                                <label for="red">❤️ Đỏ</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Câu hỏi 3 -->
+                    <div class="question-box">
+                        <p><i class="fas fa-heart"></i> Câu 3: Cảm nhận của bạn về Need như thế nào?</p>
+                        <textarea class="form-control" rows="3" v-model="answers.q3" placeholder="Viết cảm nhận của bạn..."></textarea>
+                    </div>
+
+                    <!-- Nút bốc lì xì -->
+                    <button class="btn-lixi" @click="openLixi" :disabled="!canOpen">
+                        🧧 BÓC LÌ XÌ 🧧
+                    </button>
+
+                    <!-- Kết quả lì xì -->
+                    <div v-if="currentResult" class="result-area">
+                        <div style="font-size: 2rem; font-weight:800; text-align:center;">KẾT QUẢ</div>
+                        
+                        <div class="wish-box">
+                            <!-- Lời chúc theo giới tính -->
+                            <div v-if="user.gender === 'nu'" style="font-size:1.3rem; font-weight:600; text-align:center;">
+                                ✨ Chúc {{user.name || 'bạn'}} có một năm mới vui vẻ, ngày càng xinh gái và thành công, sớm lấy chồng! ✨
+                            </div>
+                            <div v-else-if="user.gender === 'nam'" style="font-size:1.3rem; font-weight:600; text-align:center;">
+                                ✨ Chúc {{user.name || 'bạn'}} có một năm mới nhiều niềm vui và sớm lấy vợ nhe! ✨
+                            </div>
+                            <div v-else style="font-size:1.3rem; font-weight:600; text-align:center;">
+                                ✨ Chúc {{user.name || 'bạn'}} năm mới an lành, hạnh phúc và vạn sự như ý! ✨
+                            </div>
+
+                            <div style="text-align:center; margin:15px 0;">
+                                <div style="font-size:1.5rem;">Số tiền bạn nhận được:</div>
+                                <div class="amount-badge">{{ currentResult.amount.toLocaleString() }} VNĐ</div>
+                            </div>
+
+                            <!-- QR code -->
+                            <div class="qr-box">
+                                <div style="font-weight:600; margin-bottom:10px; text-align:center;">📲 Bạn gửi QR cho mình nhé</div>
+                                <div class="qr-code">
+                                    QR TẾT 2026
+                                </div>
+                            </div>
+
+                            <!-- Upload ảnh -->
+                            <div class="upload-area">
+                                <label style="font-size:1.2rem; font-weight:600;">📸 Gửi ảnh kỷ niệm</label>
+                                <input type="file" accept="image/*" @change="handleImageUpload" ref="fileInput" style="margin:10px 0; width:100%;">
+                                
+                                <div v-if="uploadedImage">
+                                    <img :src="uploadedImage" class="preview-img" alt="Preview">
+                                    <button class="btn-upload" @click="saveImageToHistory">
+                                        <i class="fas fa-save"></i> Lưu ảnh vào lịch sử
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div v-if="openError" class="error-message">{{ openError }}</div>
+                </div>
+            </div>
+
+            <!-- Cột phải - Lịch sử -->
+            <div class="right-col">
+                <div class="history-card">
+                    <div class="history-title">
+                        <i class="fas fa-history"></i> LỊCH SỬ
+                    </div>
+                    <div class="history-list">
+                        <div v-if="history.length === 0" style="text-align:center; padding:40px 20px; background:#ffefcf; border-radius:30px;">
+                            <i class="fas fa-gift" style="font-size:3rem; color:#c55c1c; margin-bottom:15px;"></i>
+                            <p style="font-size:1.2rem;">Chưa có lần bốc nào</p>
+                            <p style="color:#a64d13;">Hãy bốc lì xì đầu tiên!</p>
+                        </div>
+                        <div v-for="(item, index) in history" :key="index" class="history-item">
+                            <div class="time"><i class="far fa-clock"></i> {{ item.time }}</div>
+                            <div class="name">{{ item.name }}</div>
+                            <div class="amount">{{ item.amount.toLocaleString() }} VNĐ</div>
+                            <div class="answer-preview" v-if="item.q1">
+                                <i class="fas fa-quote-left"></i> {{ item.q1.substring(0, 30) }}{{ item.q1.length > 30 ? '...' : '' }}
+                            </div>
+                            <div v-if="item.image">
+                                <img :src="item.image" @click="openFullImage(item.image)" alt="history image">
+                            </div>
+                            <div v-if="!item.image" style="color:#a64d13; font-size:0.9rem; margin-top:5px;">
+                                <i class="fas fa-camera"></i> Chưa có ảnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            ⚡ Màu xanh dương được 20k, sai màu random 5-10k | Mỗi lần bốc đều được lưu vào lịch sử ⚡
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    user: {
+                        name: '',
+                        dob: '',
+                        gender: ''
+                    },
+                    answers: {
+                        q1: '',
+                        q2: '',
+                        q3: ''
+                    },
+                    currentResult: null,
+                    history: [],  // Lịch sử các lần bốc
+                    uploadedImage: null,
+                    openError: ''
+                }
+            },
+            computed: {
+                canOpen() {
+                    return this.user.name.trim() !== '' &&
+                           this.user.dob !== '' &&
+                           this.user.gender !== '' &&
+                           this.answers.q1.trim().length >= 5 &&
+                           this.answers.q2 !== ''
+                }
+            },
+            methods: {
+                openLixi() {
+                    if (!this.canOpen) {
+                        this.openError = 'Vui lòng điền đầy đủ thông tin (câu 1 tối thiểu 5 chữ)';
+                        return;
+                    }
+
+                    // Tính tiền
+                    let amount = this.answers.q2 === 'xanh dương' ? 20000 : (Math.floor(Math.random() * 6) + 5) * 1000;
+                    
+                    // Lưu kết quả hiện tại
+                    this.currentResult = {
+                        amount: amount,
+                        time: new Date().toLocaleString('vi-VN')
+                    };
+
+                    // Tạo bản ghi lịch sử cho lần bốc này
+                    const historyItem = {
+                        name: this.user.name,
+                        dob: this.user.dob,
+                        gender: this.user.gender,
+                        q1: this.answers.q1,
+                        q2: this.answers.q2,
+                        q3: this.answers.q3,
+                        amount: amount,
+                        time: new Date().toLocaleString('vi-VN'),
+                        image: null  // Chưa có ảnh
+                    };
+
+                    // Thêm vào đầu mảng lịch sử (mới nhất lên trên)
+                    this.history.unshift(historyItem);
+
+                    // Reset ảnh upload
+                    this.uploadedImage = null;
+                    if (this.$refs.fileInput) {
+                        this.$refs.fileInput.value = '';
+                    }
+
+                    this.openError = '';
+                },
+                handleImageUpload(event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = (e) => {
+                            this.uploadedImage = e.target.result;
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                },
+                saveImageToHistory() {
+                    if (!this.currentResult) {
+                        alert('Chưa có kết quả lì xì!');
+                        return;
+                    }
+                    if (!this.uploadedImage) {
+                        alert('Chưa chọn ảnh!');
+                        return;
+                    }
+
+                    // Cập nhật ảnh cho bản ghi mới nhất trong lịch sử
+                    if (this.history.length > 0) {
+                        this.history[0].image = this.uploadedImage;
+                    }
+
+                    this.uploadedImage = null;
+                    if (this.$refs.fileInput) {
+                        this.$refs.fileInput.value = '';
+                    }
+                    alert('Đã lưu ảnh vào lịch sử!');
+                },
+                openFullImage(src) {
+                    window.open(src, '_blank');
+                }
+            }
+        });
+
+        app.mount('#app');
+    </script>
+</body>
+</html>
